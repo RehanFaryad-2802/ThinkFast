@@ -137,7 +137,7 @@ let IsCorrect = () => {
   });
 };
 let QuestionInsert = () => {
-  QuesPlace.innerHTML = Quiz[questionIndex].question;
+  QuesPlace.innerHTML = `${questionIndex+1}.${Quiz[questionIndex].question}`;
 
   optionsPlace[0].innerHTML = Quiz[questionIndex].options.a;
   optionsPlace[0].value = "a";
